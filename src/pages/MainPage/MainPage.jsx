@@ -8,29 +8,54 @@ import "nouislider/distribute/nouislider.css";
 const MainPage = () => {
 
     const [sneackers,setSneackers] = useState(null)
-    useEffect(()=>{
-        async function fetchData() {
-            try{
-                const response = await axios.get('https://03d0ddaaff43dfdf.mokky.dev/sneackers')
-                setSneackers(response.data)
-                console.log(response.data)
-            }catch (error){
-                console.error('Error fetching :',error.message)
-            }
+    const [min, setMin] = useState(1850)
+    const [max, setMax] = useState(25768)
+    async function fetchData(url) {
+        try{
+            const response = await axios.get(url)
+            setSneackers(response.data)
+            console.log(response.data)
+        }catch (error){
+            console.error('Error fetching :',error.message)
         }
-        fetchData()
+    }
+
+    useEffect(()=>{
+        const url = 'https://03d0ddaaff43dfdf.mokky.dev/sneackers'
+        fetchData(url)
     },[])
 
+    const filter = () => {
+       
+        const url = 'https://03d0ddaaff43dfdf.mokky.dev/sneackers?price[from]='+ min +'&price[to]=' + max
+        fetchData(url)
+    }
   
 
   return (
     <div>
-       MainPage
-    
-       <Nouislider range={{ min: 0, max: 100 }} start={[20, 80]} connect />    
+    MainPage
+
+    <div>Минимальная: {min}Руб</div>
+    <div>Максимальная: {max}Руб </div>
+    <div style={{width:"250px"}}>
+    <Nouislider 
+        range={{ min: 1850, max: 25768 }} 
+        start={[1850,25768]}
+        connect 
+        onUpdate={(slider) =>{
+            setMin(Number(slider[0]))
+            setMax(Number(slider[1]))
+
+
+            console.log(slider)
+        }}
+    />    
+    </div>
+        <button onClick={filter}>Применить фильтры</button>
        {sneackers && sneackers.map(item =>
             <div key={item.id}>
-            {item.id} | {item.title}
+            {item.id} | {item.title} | {item.price}
 
             </div>
        )}
