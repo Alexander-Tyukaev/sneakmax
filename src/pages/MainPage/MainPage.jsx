@@ -4,6 +4,7 @@ import Nouislider from "nouislider-react";
 import "nouislider/distribute/nouislider.css";
 import { useNavigate } from "react-router-dom";
 import { DETAIL_PAGE_ROUTE } from "../../router/consts";
+import Header from "../../components/Header/header";
 
 
 
@@ -71,7 +72,7 @@ const [size43,setSize43] = useState(false)
 
   return (
     <div>
-    <h1> MainPage </h1>
+    <Header />
 
     <div>Минимальная: {min}Руб</div>
     <div>Максимальная: {max}Руб </div>
