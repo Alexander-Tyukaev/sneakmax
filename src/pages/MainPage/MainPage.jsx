@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react"
 import Nouislider from "nouislider-react";
-import "nouislider/distribute/nouislider.css";
+import "./slider.css";
+import "./mainpage.css"
 import { useNavigate } from "react-router-dom";
 import { DETAIL_PAGE_ROUTE } from "../../router/consts";
 import Header from "../../components/Header/header";
@@ -71,12 +72,23 @@ const [size43,setSize43] = useState(false)
 
 
   return (
-    <div>
+    <div >
     <Header />
-
-    <div>Минимальная: {min}Руб</div>
-    <div>Максимальная: {max}Руб </div>
-    <div style={{width:"250px"}}>
+    <section className="catalog">
+    <div className="catalog-block1">
+        <div className="catalog-title">Каталог</div>
+    </div>
+    <div className="catalog-block2">
+    <div className="catalog-filter">
+    <div className="filter-text">Подбор по параметрам</div>
+    <div className="catalog-price">
+        <div className="filter-price">Цена, руб</div>
+    <div className="catalog-filter-price">
+    <div> {min}</div>
+    <div className="catalog-polosa"></div>
+    <div>{max} </div>
+    </div>
+    <div className="slide-filter">
     <Nouislider 
         range={{ min: 1850, max: 25768 }} 
         start={[1850,25768]}
@@ -88,7 +100,8 @@ const [size43,setSize43] = useState(false)
 
             console.log(slider)
         }}
-    />    
+    />
+    </div>    
     </div>
         <br />
         <div><input type="checkbox" checked={man} onChange={() => setMan(!man)} />Мужской </div>
@@ -108,6 +121,8 @@ const [size43,setSize43] = useState(false)
         </div>
         <br />
         <button onClick={filter}>Применить фильтры</button>
+        </div>
+        <div className="catalog-cart">
         <br />
        {sneackers && sneackers.map(item =>
             <div key={item.id}>
@@ -116,9 +131,11 @@ const [size43,setSize43] = useState(false)
             </div>
        )}
 <br />
-<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade76f8f407611b8910389e757fece993a048b7424958ac702d67cf33b43b457c&amp;source=constructor" width="680" height="500" frameBorder="0"></iframe>
 
-
+       </div>
+       </div>
+    </section>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade76f8f407611b8910389e757fece993a048b7424958ac702d67cf33b43b457c&amp;source=constructor" width="680" height="500" frameBorder="0"></iframe>
     </div>
   )
 };

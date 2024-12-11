@@ -17,16 +17,19 @@ const Header = () => {
         </div>
         <div className="header-basket">
             <div className="navigate-menu">Корзина </div>
-            <img src={require('../image/Vector.png')} alt="" />
-            <img src={require('../image/tovarj.png')} alt="" />
+            <img src={require('../image/Vector.png')} alt="" className="header-img1"/>
+            <img src={require('../image/tovarj.png')} alt="" className="header-img2"/>
         
         </div>
         </div>
         <div className="header-line"></div>
       </div>
-      <div></div>
-      <div></div>
-      <button>Перейти к покупкам</button>
+      <div className="header-description">Кроссовки известных брендов 
+      с доставкой по России и СНГ
+      </div>
+      <div className="header-description2">Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и многие другие по низким ценам</div>
+      <div className="header-description3">SneakMax</div>
+      <button className="header-button">Перейти к покупкам</button>
     </div>
   )
 };

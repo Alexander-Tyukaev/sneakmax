@@ -1,75 +1,146 @@
 @font-face {
-    font-family: 'Intro';
-    src: url('../font/Inter-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
-  }
-.header-container{
-    width: 100%;
-    height: 528px;
-    background: rgba(72, 66, 131, 1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+  font-family: 'Intro';
+  src: url('../font/IntroDemoCond-LightCAPS.otf') format('truetype');
+}
+@font-face {
+  font-family: 'IntroBold';
+  src: url('../font/ofont.ru_Intro.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Introt';
+  src: url('../font/Inter-Italic-VariableFont_opsz\,wght.ttf')
+    format('truetype');
+}
+.header-container {
+  width: 100%;
+  height: 528px;
+  background: rgba(72, 66, 131, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.header-logo {
+  width: 145px;
+  height: 24px;
+  top: 20px;
+  left: 370px;
+  font-family: 'IntroBold';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+}
+.header-menu {
+  width: 70%;
+  height: 44px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.header-logo{
-width: 145px;
-height: 24px;
-top: 20px;
-left: 370px;
-font-family: 'Intro' ;
-font-size: 30px;
-font-weight: 700;
-line-height: 30px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: rgba(255, 255, 255, 1);
+.header-line {
+  height: 0px;
+  top: 64px;
+  left: 370px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.header-menu{
-width: 70%;
-height: 44px;
+.navigate-menu {
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Intro';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.header-navigate-menu {
+  width: 50%;
+  height: 14px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'intro';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+}
+.header-mini-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-basket {
+  width: 95px;
+  height: 25px;
+  top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'into';
+}
+.header-img2 {
+  margin-left: -20px;
+  margin-top: 7px;
+}
+.header-img1 {
+  float: left;
+  height: auto;
+}
+.header-description {
+  width: 580px;
+  height: 100px;
+  font-family: 'Introt';
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50.4px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  padding-top: 70px;
+  margin-right: 39%;
+  z-index: 80;
+}
+.header-description2 {
+  width: 480px;
+  height: 44px;
+  font-family: 'Introt';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+  padding-top: 120px;
+  margin-right: 45%;
+  z-index: 80;
+}
+.header-description3 {
+  width: 980px;
+  height: 200px;
+  font-family: 'introt';
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 200px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.12);
+  margin-top: -75px;
 
-display: flex;
-flex-direction: column;
-justify-content: space-around;
+  z-index: 30;
 }
-.header-line{
-
-height: 0px;
-top: 64px;
-left: 370px;
-border: 1px solid rgba(255, 255, 255, 0.5)
-}
-.navigate-menu{
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Intro';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 14px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-      
-}
-.header-navigate-menu{
-width: 50%;
-height: 14px;
-display: flex;
-justify-content: space-between;
-
-}
-.header-mini-menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-.header-basket{
-width: 95px;
-height: 25px;
-top: 24px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-
+.header-button {
+  width: 250px;
+  height: 60px;
+  margin-right: 57%;
+  margin-top: -40px;
+  padding: 22px 47px 22px 47px;
+  gap: 10px;
+  border-radius: 4px 0px 0px 0px;
+  background: rgba(241, 79, 79, 1);
+  color: rgba(255, 255, 255, 1);
+  z-index: 80;
 }
