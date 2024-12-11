@@ -103,10 +103,26 @@ const [size43,setSize43] = useState(false)
     />
     </div>    
     </div>
-        <br />
-        <div><input type="checkbox" checked={man} onChange={() => setMan(!man)} />Мужской </div>
-        <div><input type="checkbox" checked={woman} onChange={() => setWoman(!woman)} />Женский </div>
-        <br />
+        <div className="catalog-gender">
+        <div className="gender">Пол</div>
+        <div className="gender-checkbox">
+            <div className="checkbox-gender">
+        <label class="custom-checkbox">
+            <input type="checkbox" checked={man} onChange={() => setMan(!man)} id="myCheckbox"/>
+            <span  class="checkmark"></span>
+        </label>
+        <span>Мужской</span>
+            </div>
+            <div className="checkbox-gender">
+        <label className="custom-checkbox">
+            <input type="checkbox" checked={woman} onChange={() => setWoman(!woman)} />
+            <span  class="checkmark"></span>
+        </label>
+        <span>Женский</span>
+        </div>
+        </div>
+        </div>
+
         <div>
             <div><input type="checkbox" checked={size35} onChange={() => setSize35(!size35)} />35 </div>
             <div><input type="checkbox" checked={size36} onChange={() => setSize36(!size36)} />36 </div>
