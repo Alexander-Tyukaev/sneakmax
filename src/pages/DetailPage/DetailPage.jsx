@@ -10,18 +10,20 @@ const DetailPage = () => {
 
     const navigate = useNavigate()
 
-    useEffect(() =>{
-        async function fetchData(url) {
-            try{
-                const response = await axios.get(url)
-                setSneak(response.data)
-              
-            }catch (error){
-                console.error('Error fetching :',error.message)
-            }
-        }
-        const url = 'https://03d0ddaaff43dfdf.mokky.dev/sneackers/' + sneakId
-        fetchData(url)
+    const fetchData = async (url) => {
+      try {
+        const response = await axios.get(url);
+        setSneak(response.data);
+      } catch (error) {
+        console.error("Error fetching :", error.message);
+      }
+    };
+  
+    useEffect(() => {
+      const initialUrl = "https://03d0ddaaff43dfdf.mokky.dev/sneackers";
+      fetchData(initialUrl);
+    
+  
 
     },[])
   return (
