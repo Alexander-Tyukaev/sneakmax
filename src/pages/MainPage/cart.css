@@ -1,0 +1,17 @@
+.catalog-cart {
+  display: flex;
+  flex-wrap: wrap;
+  width: 880px;
+  height: auto;
+  border:1px solid red;
+}
+.cart-sneackers{
+  width: 280px;
+height: 349px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+border:1px solid rgb(159, 134, 134);
+
+}

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react"
 import Nouislider from "nouislider-react";
 import "./slider.css";
 import "./mainpage.css"
+import "./cart.css"
 import { useNavigate } from "react-router-dom";
 import { DETAIL_PAGE_ROUTE } from "../../router/consts";
 import Header from "../../components/Header/header";
@@ -30,20 +31,22 @@ const [size41,setSize41] = useState(false)
 const [size42,setSize42] = useState(false)
 const [size43,setSize43] = useState(false)
 
-    async function fetchData(url) {
-        try{
-            const response = await axios.get(url)
-            setSneackers(response.data)
-            console.log(response.data)
-        }catch (error){
-            console.error('Error fetching :',error.message)
-        }
-    }
+async function fetchData(url) {
+  try{
+      const response = await axios.get(url)
+      setSneackers(response.data)
+      console.log(response.data)
+  }catch (error){
+      console.error('Error fetching :',error.message)
+  }
+}
 
-    useEffect(()=>{
-        const url = 'https://03d0ddaaff43dfdf.mokky.dev/sneackers'
-        fetchData(url)
-    },[])
+useEffect(()=>{
+  const url = 'https://03d0ddaaff43dfdf.mokky.dev/sneackers'
+  fetchData(url)
+},[])
+
+
     const clearFilters = () => {
       
         setSliderValues([1850, 25768]);
@@ -188,7 +191,7 @@ const [size43,setSize43] = useState(false)
         <div className="catalog-cart">
         <br />
        {sneackers && sneackers.map(item =>
-            <div key={item.id}>
+            <div key={item.id} className="cart-sneackers">
             {item.id} | {item.title} | {item.price} | {item.sizes.map(size => <span key = {size}>  [{ size }]  </span>)}
         <button onClick={() => navigate(DETAIL_PAGE_ROUTE+ '/' + item.id )}>Посмотреть</button>
             </div>

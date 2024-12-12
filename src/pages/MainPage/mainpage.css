@@ -42,10 +42,7 @@
 
   color: rgba(68, 75, 88, 1);
 }
-.catalog-cart {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .catalog-filter-price {
   display: flex;
   justify-content: space-around;
