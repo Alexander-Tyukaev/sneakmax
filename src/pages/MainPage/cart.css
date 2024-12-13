@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   width: 880px;
   height: auto;
-  border:1px solid red;
+  justify-content: space-around;
 }
 .cart-sneackers{
   width: 280px;
@@ -12,6 +12,23 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 flex-direction: column;
-border:1px solid rgb(159, 134, 134);
 
+
+}
+
+
+.all-cart {
+  margin-top: 20px;
+  width: 200px;
+  height: 60px;
+  padding: 22px 47px 22px 47px;
+  gap: 10px;
+  border-radius: 4px 0px 0px 0px;
+  background: rgba(241, 79, 79, 1);
+  color: white;
+}
+
+.sneaker-image {
+  max-width: 100%;
+  height: auto;
 }

@@ -24,12 +24,14 @@ const Header = () => {
         </div>
         <div className="header-line"></div>
       </div>
-      <div className="header-description">Кроссовки известных брендов 
+      <div className="header-description">Кроссовки известных брендов <br/>
       с доставкой по России и СНГ
       </div>
-      <div className="header-description2">Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и многие другие по низким ценам</div>
+      <div className="header-description2">Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok,<br/> Converse и многие другие по низким ценам</div>
       <div className="header-description3">SneakMax</div>
+      <div className="button-div">
       <button className="header-button">Перейти к покупкам</button>
+      </div>
     </div>
   )
 };

@@ -34,7 +34,7 @@
   color: rgba(255, 255, 255, 1);
 }
 .header-menu {
-  width: 70%;
+  width: 1180px;
   height: 44px;
 
   display: flex;
@@ -92,30 +92,30 @@
   height: auto;
 }
 .header-description {
-  width: 580px;
+  width: 1180px;
   height: 100px;
   font-family: 'Introt';
   font-size: 36px;
   font-weight: 600;
   line-height: 50.4px;
-  text-align: left;
   color: rgba(255, 255, 255, 1);
   padding-top: 70px;
-  margin-right: 39%;
+  display: flex;
+  justify-content: left;
   z-index: 80;
 }
 .header-description2 {
-  width: 480px;
+  width: 1180px;
   height: 44px;
   font-family: 'Introt';
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
-  text-align: left;
+  display: flex;
+  justify-content: left;
   text-decoration-skip-ink: none;
   color: rgba(255, 255, 255, 1);
   padding-top: 120px;
-  margin-right: 45%;
   z-index: 80;
 }
 .header-description3 {
@@ -135,12 +135,19 @@
 .header-button {
   width: 250px;
   height: 60px;
-  margin-right: 57%;
-  margin-top: -40px;
+ 
   padding: 22px 47px 22px 47px;
   gap: 10px;
   border-radius: 4px 0px 0px 0px;
   background: rgba(241, 79, 79, 1);
   color: rgba(255, 255, 255, 1);
+ 
+}
+.button-div{
+  width: 1180px;
+  height: 60px;
+  display: flex;
+  justify-content: left;
+  margin-top: -40px;
   z-index: 80;
 }

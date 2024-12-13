@@ -30,6 +30,25 @@ const [size40,setSize40] = useState(false)
 const [size41,setSize41] = useState(false)
 const [size42,setSize42] = useState(false)
 const [size43,setSize43] = useState(false)
+const [displayedSneakers, setDisplayedSneakers] = useState([]); 
+const [showMore, setShowMore] = useState(false); 
+
+
+
+useEffect(() => {
+  if (sneackers) { 
+      setDisplayedSneakers(sneackers.slice(0, 6));
+      setShowMore(sneackers.length > 6); 
+  }
+}, [sneackers]);
+
+const handleShowMore = () => {
+  const nextDisplayed = sneackers.slice(0, displayedSneakers.length + 6);
+  setDisplayedSneakers(nextDisplayed);
+  if (nextDisplayed.length >= sneackers.length) {
+      setShowMore(false); 
+  }
+};
 
 async function fetchData(url) {
   try{
@@ -189,16 +208,18 @@ useEffect(()=>{
         <button onClick={clearFilters} className="button-clean">Очистить фильтры</button>
         </div>
         <div className="catalog-cart">
-        <br />
-       {sneackers && sneackers.map(item =>
-            <div key={item.id} className="cart-sneackers">
-            {item.id} | {item.title} | {item.price} | {item.sizes.map(size => <span key = {size}>  [{ size }]  </span>)}
-        <button onClick={() => navigate(DETAIL_PAGE_ROUTE+ '/' + item.id )}>Посмотреть</button>
-            </div>
-       )}
-<br />
-
-       </div>
+            {displayedSneakers.map((item) => (
+                <div key={item.id} className="cart-sneackers">
+                    <img src={item.imgUrl} alt={item.title} className="sneaker-image" />
+                    <h3>{item.title}</h3>  
+                    <p>Цена: {item.price}</p>
+                    <button onClick={() => navigate(`${DETAIL_PAGE_ROUTE}/${item.id}`)}>Посмотреть</button>
+                </div>
+            ))}
+            {showMore && (
+                <button onClick={handleShowMore} className="all-cart">Показать еще</button>
+            )}
+        </div>
        </div>
     </section>
     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade76f8f407611b8910389e757fece993a048b7424958ac702d67cf33b43b457c&amp;source=constructor" width="680" height="500" frameBorder="0"></iframe>
