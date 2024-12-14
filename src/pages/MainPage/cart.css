@@ -21,14 +21,31 @@ flex-direction: column;
   margin-top: 20px;
   width: 200px;
   height: 60px;
-  padding: 22px 47px 22px 47px;
-  gap: 10px;
   border-radius: 4px 0px 0px 0px;
   background: rgba(241, 79, 79, 1);
   color: white;
+  cursor: pointer;
+  
 }
 
+.all-cart:hover{
+  background: rgb(171, 7, 7);
+  transform: scale(1.05);
+}
+.all-cart:active{
+  background: rgb(243, 196, 196);
+  transform: scale(1);
+}
 .sneaker-image {
   max-width: 100%;
   height: auto;
+}
+.cart-viewing{
+  width: 100px;
+height:30px;
+margin-bottom: 5px;
+background: rgb(217, 217, 217);
+border-radius: 5px;
+border-style: none;
+cursor: pointer;
 }

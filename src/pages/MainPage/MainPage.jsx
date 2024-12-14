@@ -7,6 +7,7 @@ import "./cart.css"
 import { useNavigate } from "react-router-dom";
 import { DETAIL_PAGE_ROUTE } from "../../router/consts";
 import Header from "../../components/Header/header";
+import About from "../../components/about/about";
 
 
 
@@ -30,25 +31,31 @@ const [size40,setSize40] = useState(false)
 const [size41,setSize41] = useState(false)
 const [size42,setSize42] = useState(false)
 const [size43,setSize43] = useState(false)
-const [displayedSneakers, setDisplayedSneakers] = useState([]); 
-const [showMore, setShowMore] = useState(false); 
+
+const [displayedSneakers, setDisplayedSneakers] = useState([]);
+const [itemsToShow, setItemsToShow] = useState(6);
+const [isExpanded, setIsExpanded] = useState(false); 
 
 
 
 useEffect(() => {
-  if (sneackers) { 
-      setDisplayedSneakers(sneackers.slice(0, 6));
-      setShowMore(sneackers.length > 6); 
+  if (sneackers) {
+      setDisplayedSneakers(sneackers.slice(0, itemsToShow));
   }
-}, [sneackers]);
+}, [sneackers, itemsToShow]);
 
 const handleShowMore = () => {
-  const nextDisplayed = sneackers.slice(0, displayedSneakers.length + 6);
-  setDisplayedSneakers(nextDisplayed);
-  if (nextDisplayed.length >= sneackers.length) {
-      setShowMore(false); 
+  setItemsToShow(Math.min(itemsToShow + 6, sneackers.length));
+  if (itemsToShow >= 12) {
+      setIsExpanded(true); 
   }
 };
+
+const handleCollapse = () => {
+  setItemsToShow(6);
+  setIsExpanded(false);
+};
+
 
 async function fetchData(url) {
   try{
@@ -211,17 +218,23 @@ useEffect(()=>{
             {displayedSneakers.map((item) => (
                 <div key={item.id} className="cart-sneackers">
                     <img src={item.imgUrl} alt={item.title} className="sneaker-image" />
-                    <h3>{item.title}</h3>  
+                    <h3>{item.title}</h3>
                     <p>Цена: {item.price}</p>
-                    <button onClick={() => navigate(`${DETAIL_PAGE_ROUTE}/${item.id}`)}>Посмотреть</button>
+                    <button onClick={() => navigate(`${DETAIL_PAGE_ROUTE}/${item.id}`)} className="cart-viewing">Посмотреть</button>
                 </div>
             ))}
-            {showMore && (
+
+        
+            {!isExpanded && sneackers?.length > itemsToShow && (
                 <button onClick={handleShowMore} className="all-cart">Показать еще</button>
+            )}
+            {isExpanded && (
+                <button onClick={handleCollapse} className="all-cart">Свернуть</button>
             )}
         </div>
        </div>
     </section>
+    <About />
     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade76f8f407611b8910389e757fece993a048b7424958ac702d67cf33b43b457c&amp;source=constructor" width="680" height="500" frameBorder="0"></iframe>
     </div>
   )
