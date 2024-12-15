@@ -151,3 +151,8 @@
   margin-top: -40px;
   z-index: 80;
 }
+.navigate-about{
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Intro';
+  text-decoration: none;
+}
