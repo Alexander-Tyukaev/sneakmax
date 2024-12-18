@@ -14,7 +14,7 @@ const MySlider = () => {
   const [feedback, setFeedback] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [currentSlide, setCurrentSlide] = useState(0); // Add state for current slide
+  const [currentSlide, setCurrentSlide] = useState(0);
   
 
   const settings = {
@@ -24,8 +24,8 @@ const MySlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow currentSlide={currentSlide} />, // Pass currentSlide
-    afterChange: (current) => setCurrentSlide(current), // Update currentSlide
+    prevArrow: <PrevArrow currentSlide={currentSlide} />, 
+    afterChange: (current) => setCurrentSlide(current), 
   };
 
   const handleSubmit = () => {
@@ -72,3 +72,4 @@ return (
 };
 
 export default MySlider;
+                                          

@@ -2,10 +2,12 @@ import React from 'react';
 
 const ShoeTypeSelection = ({ shoeType, onChange }) => {
   const shoeTypeImages = {
-    кроссовки: '/path/to/sneakers.jpg',
-    туфли: '/path/to/dress_shoes.jpg',
-    сапоги: '/path/to/boots.jpg',
-    сандалии: '/path/to/sandals.jpg',
+    кроссовки: require('../image/5.png'),
+    туфли:  require('../image/4.png'),
+    сапоги: require('../image/9.png'),
+    сандалии: require('../image/7.png'),
+    кеды:require('../image/6.png'),
+    тапки:require('../image/8.png'),
   };
 
   return (
@@ -14,10 +16,11 @@ const ShoeTypeSelection = ({ shoeType, onChange }) => {
         <div className="quiz-text">Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями </div>
         <div className="quiz-polosa"></div>
       <h3>Какой тип обуви вы предпочитаете?</h3>
-      <div>
+      <div className="slider-container">
         {Object.entries(shoeTypeImages).map(([type, img]) => (
-          <label key={type}>
-            <img src={img} alt={type} style={{ width: '100px', height: 'auto', marginRight: '10px' }} />
+          <label key={type} className="img-label">
+            <img src={img} alt={type} className="slaider-img" />
+            
             <input
               type="radio"
               value={type}
@@ -27,7 +30,10 @@ const ShoeTypeSelection = ({ shoeType, onChange }) => {
             {type}
           </label>
         ))}
+          <div className="quiz-polosa2"></div>
+          <div className="quiz-nomeracia">1 из 3</div>
       </div>
+    
     </div>
   );
 };

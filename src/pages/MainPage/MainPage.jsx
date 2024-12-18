@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 import { DETAIL_PAGE_ROUTE } from "../../router/consts";
 import Header from "../../components/Header/header";
 import About from "../../components/about/about";
-import Quiz from "../../components/quiz/quiz";
 import Team from "../../components/team/team";
 import MySlider from "../../components/slider/Slider1";
 
@@ -238,9 +237,9 @@ useEffect(()=>{
        </div>
     </section>
     <About />
-    <Quiz />
-    <Team />
     <MySlider />
+    <Team />
+   
     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade76f8f407611b8910389e757fece993a048b7424958ac702d67cf33b43b457c&amp;source=constructor" width="680" height="500" frameBorder="0"></iframe>
     </div>
   )
