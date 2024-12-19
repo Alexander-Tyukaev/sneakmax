@@ -1,5 +1,5 @@
 import React from 'react';
-// import './ShoeTypeSelection.css'; 
+import './ShoeTypeSelection.css'; 
 
 
 const ShoeTypeSelection = ({ shoeType, onChange }) => {
@@ -17,14 +17,14 @@ const ShoeTypeSelection = ({ shoeType, onChange }) => {
       <div className="quiz-title">Мы подберем идеальную пару для вас</div>
       <div className="quiz-text">Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями </div>
       <div className="quiz-polosa"></div>
-      <h3>Какой тип обуви вы предпочитаете?</h3>
+      <h3 className="quiz-h3">Какой тип обуви вы предпочитаете?</h3>
       <div className="slider-container">
         {Object.entries(shoeTypeImages).map(([type, img]) => (
           <label key={type} className="img-label" onClick={() => onChange(type)}>
             <img src={img} alt={type} className="slaider-img" />
             <div
               div className={`slider-checkbox ${shoeType === type ? 'checked' : ''}`}
-              onClick={() => onChange(type)} 
+              onClick={() => onChange(type)}
             />
             {type}
           </label>

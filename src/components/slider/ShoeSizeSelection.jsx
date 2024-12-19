@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './ShoeSizeSelection.css';
 
 const ShoeSizeSelection = ({ shoeSize, onChange }) => {
   const sizeOptions = [
@@ -12,24 +12,26 @@ const ShoeSizeSelection = ({ shoeSize, onChange }) => {
 
   return (
     <div>
-      <h3>Ваш размер обуви?</h3>
-      <div>
+      <div className="quiz-title">Мы подберем идеальную пару для вас</div>
+      <div className="quiz-text">Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями </div>
+      <div className="quiz-polosa"></div>
+      <h3 className="quiz-h3">Какой размер вам подойдет?</h3>
+      <div className="size2-container">
         {sizeOptions.map((option) => (
-          <label key={option.value}>
-            <input
-              type="radio"
-              value={option.value}
-              checked={shoeSize === option.value}
-              onChange={(e) => onChange(e.target.value)}
+          <label key={option.value} className="label-size">
+            <div
+              className={`custom-radio ${shoeSize === option.value ? 'checked' : ''}`}
+              onClick={() => onChange(option.value)}
             />
             {option.label}
           </label>
         ))}
       </div>
-     
+      <img src={require('../image/Rectangle 45.png')} alt="" className="img-size" />
+      <div className="quiz-polosa3"></div>
+      <div className="size-stranicza">2 из 3</div>
     </div>
   );
 };
-
 
 export default ShoeSizeSelection;
