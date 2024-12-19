@@ -30,7 +30,7 @@
   .img-label{
     width: 310px;
     height: 140px;
-    background: rgb(237, 204, 165) ;
+    background: rgba(255, 244, 238, 1);
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;

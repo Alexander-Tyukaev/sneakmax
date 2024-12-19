@@ -53,21 +53,27 @@ const MySlider = () => {
 };
 
 const NextArrow = (props) => {
-const { onClick } = props;
+const { onClick ,  currentSlide} = props;
 return (
-  <button onClick={onClick} className="slider-forward">Следующий шаг</button>
+  <button
+  onClick={onClick}
+  className={`slider-forward ${currentSlide === 3 ? 'hide' : ''}`}
+>
+  Следующий шаг
+</button>
 );
 };
 
-const PrevArrow = ({ currentSlide, ...props }) => { // Destructure currentSlide
-const { onClick } = props;
-return (
-  <button
-    onClick={onClick}
-    className={`slider-back ${currentSlide === 0 ? 'hide' : ''}`} // Conditional class
-  >
-    Предыдущий шаг
-  </button>
+const PrevArrow = ({ currentSlide, ...props }) => {
+  const { onClick } = props;
+  const buttonClass = `slider-back ${currentSlide === 0 ? 'hide' : ''} ${
+    currentSlide === 3 ? 'last-slide' : ''
+  }`;
+
+  return (
+    <button onClick={onClick} className={buttonClass} disabled={currentSlide === 0}>
+      Предыдущий шаг
+    </button>
 );
 };
 
