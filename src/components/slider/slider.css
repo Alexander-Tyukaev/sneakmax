@@ -76,13 +76,7 @@
       margin-right: 10px;
   }
   
-  .slider textarea {
-      width: calc(100% - 20px);
-      padding: 10px;
-      box-sizing: border-box;
-      margin-bottom: 10px;
-      resize: vertical;
-  }
+ 
   
   
   .slider button {

@@ -1,4 +1,5 @@
 import React from 'react';
+import "./FeedbackForm.css"
 
 const ContactForm = ({ name, email, onChangeName, onChangeEmail, onSubmit }) => {
   return (
