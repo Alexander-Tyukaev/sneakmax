@@ -11,7 +11,8 @@ import About from "../../components/about/about";
 import Team from "../../components/team/team";
 import MySlider from "../../components/slider/Slider1";
 import Faq from "../../components/faq/faq";
-
+import Contacts from "../../components/contacts/contacts";
+import Insta from "../../components/insta/insta";
 
 const MainPage = () => {
     const navigate = useNavigate()
@@ -240,8 +241,8 @@ useEffect(()=>{
     <MySlider />
     <Team />
     <Faq />
-   
-    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade76f8f407611b8910389e757fece993a048b7424958ac702d67cf33b43b457c&amp;source=constructor" width="680" height="500" frameBorder="0"></iframe>
+   <Contacts />
+   <Insta />
     </div>
   )
 };

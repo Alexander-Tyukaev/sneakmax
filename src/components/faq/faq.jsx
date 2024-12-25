@@ -1,5 +1,6 @@
 import React from 'react';
 import FaqAccordion from './FaqAccordion';
+import "./faq.css"
 
 const Faq = () => {
   const faqs = [
@@ -22,7 +23,7 @@ const Faq = () => {
     ];
 
   return (
-    <div >
+    <div  className="faq-container">
       <FaqAccordion faqs={faqs} />
     </div>
   );

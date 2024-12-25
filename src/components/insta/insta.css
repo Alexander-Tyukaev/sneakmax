@@ -1,0 +1,9 @@
+.insta-container{
+    width: 1120px;
+    height: 413px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 1px solid red;
+    display: flex;
+margin: auto;
+}
