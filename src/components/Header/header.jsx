@@ -8,18 +8,22 @@ const Header = () => {
         <div className="header-mini-menu">
         <div className="header-logo">SneakMax</div>
         <div className="header-navigate-menu">
-            <div className="navigate-menu">
+        <div className="navigate-menu">
             <a href="#catalog" className="navigate-about"> Каталог</a>
               </div>
             <div className="navigate-menu">
             <a href="#about" className="navigate-about"> О нас</a>
              </div>
-            <div className="navigate-menu">Подбор товара</div>
+            <div className="navigate-menu"></div>
+             <a href="#slider" className="navigate-about">Подбор товара</a>
             <div className="navigate-menu">
             <a href="#team" className="navigate-about">Наша команда</a>
               </div>
-            <div className="navigate-menu">Доставка и оплата</div>
-            <div className="navigate-menu">Контакты</div>
+            <div className="navigate-menu">
+                 <a href="#contacts" className="navigate-about">Доставка и оплата</a></div>
+            <div className="navigate-menu">
+                <a href="#contacts" className="navigate-about">Контакты</a>
+ </div>
         </div>
         <div className="header-basket">
             <div className="navigate-menu">Корзина </div>

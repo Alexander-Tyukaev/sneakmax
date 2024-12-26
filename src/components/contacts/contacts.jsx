@@ -15,7 +15,7 @@ const Contacts = () => {
   const imageClass = currentImageIndex === 1 ? "contacts-image1 tooltip-image" : "contacts-image1";
 
   return (
-    <div className="contacts-container">
+    <div className="contacts-container" id="contacts">
     <div className="contacts-block">
       <div className="contacts-block1">
         <div className="contacts-content1">Контакты</div>

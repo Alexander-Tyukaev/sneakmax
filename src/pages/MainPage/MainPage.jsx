@@ -13,6 +13,7 @@ import MySlider from "../../components/slider/Slider1";
 import Faq from "../../components/faq/faq";
 import Contacts from "../../components/contacts/contacts";
 import Insta from "../../components/insta/insta";
+import Footer from "../../components/footer/footer";
 
 const MainPage = () => {
     const navigate = useNavigate()
@@ -243,6 +244,7 @@ useEffect(()=>{
     <Faq />
    <Contacts />
    <Insta />
+   <Footer />
     </div>
   )
 };

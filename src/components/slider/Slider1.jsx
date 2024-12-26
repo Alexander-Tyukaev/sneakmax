@@ -41,7 +41,7 @@ const MySlider = () => {
   };
 
   return (
-    <div className="slider">
+    <div className="slider" id="slider">
     <SliderComponent {...settings}>
       <ShoeTypeSelection shoeType={shoeType} onChange={setShoeType} />
       <ShoeSizeSelection shoeSize={shoeSize} onChange={setShoeSize} />
