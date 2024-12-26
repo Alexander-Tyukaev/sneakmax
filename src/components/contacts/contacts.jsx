@@ -16,6 +16,7 @@ const Contacts = () => {
 
   return (
     <div className="contacts-container">
+    <div className="contacts-block">
       <div className="contacts-block1">
         <div className="contacts-content1">Контакты</div>
         <div className="contacts-content2">
@@ -51,6 +52,7 @@ const Contacts = () => {
           frameBorder="0"
         ></iframe>
       </div>
+    </div>
     </div>
   );
 };

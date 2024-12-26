@@ -11,16 +11,25 @@
   src: url('../font/Inter-Italic-VariableFont_opsz\,wght.ttf')
     format('truetype');
 }
-.contacts-container {
+.contacts-container{
   width: 100%;
-  height: 618px;
   background: rgba(243, 246, 246, 1);
-  padding-top: 60px;
-  justify-content: center;
+justify-content: center;
   display: flex;
 }
+
+.contacts-block {
+  width: 1180px;
+  height: 618px;
+
+  background: rgba(243, 246, 246, 1);
+  padding-top: 60px;
+  justify-content: space-between;
+  display: flex;
+ 
+}
 .contacts-block1 {
-  width: 400px;
+  width: 450px;
   height: 500px;
   display: flex;
   justify-content: space-between;
