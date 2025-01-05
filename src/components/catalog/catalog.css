@@ -1,0 +1,223 @@
+.catalog {
+    position: relative;
+    width: 1180px;
+    height: auto;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  
+  
+  }
+  .catalog-block1 {
+    width: 117px;
+    height: 30px;
+    font-family: 'Intro';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    position: absolute;
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    color: rgba(68, 75, 88, 1);
+  }
+  
+  .catalog-block2 {
+    display: flex;
+    margin-top: 79px;
+  }
+  .catalog-filter {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 597px;
+    border-width: 0px, 0px, 0px, 0px;
+    color: rgb(44, 43, 43);
+    background: rgb(238, 215, 187);
+  }
+  .filter-text {
+    width: 100%;
+    height: 48px;
+    font-family: 'Introt';
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    display: flex;
+    text-align: center;
+  
+    color: rgba(68, 75, 88, 1);
+  }
+  
+  .catalog-filter-price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(178, 181, 187, 1);
+    border-right: 1px solid rgba(178, 181, 187, 1);
+    border-left: 1px solid rgba(178, 181, 187, 1);
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+  .filter-price {
+    width: 200px;
+    height: 16px;
+    font-family: 'Introt';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .catalog-polosa {
+    width: 27px;
+    height: 0px;
+    top: 780px;
+    left: 510px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    transform: rotate(-90deg);
+    border: 1px solid rgba(178, 181, 187, 1);
+  }
+  .slide-filter {
+    width: 255px;
+    margin: auto;
+    align-items: center;
+    padding-left: 4px;
+  }
+  .catalog-gender {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .gender {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .gender-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(238, 215, 187);
+  }
+  
+  .custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    margin-right: 5px;
+    user-select: none;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .custom-checkbox input[type='checkbox'] {
+    display: none;
+  }
+  
+  .custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .custom-checkbox input[type='checkbox']:checked + .checkmark {
+    background-color: rgb(238, 215, 187);
+    border-color: rgba(178, 181, 187, 1);
+  }
+  
+  .custom-checkbox input[type='checkbox']:checked + .checkmark::before,
+  .custom-checkbox input[type='checkbox']:checked + .checkmark::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(178, 181, 187, 1);
+  }
+  
+  .custom-checkbox input[type='checkbox']:checked + .checkmark::before {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    width: 3px;
+    height: 12px;
+  }
+  
+  .custom-checkbox input[type='checkbox']:checked + .checkmark::after {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-78deg);
+    width: 12px;
+    height: 3px;
+  }
+  .checkbox-gender {
+    display: flex;
+  }
+  .catalog-size {
+    width: 240px;
+    height: 230px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .size-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 33.3%;
+    height: 33.3%;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+  }
+  
+  .size-number-checked {
+    background-color: rgb(237, 204, 165);
+    border-color: rgba(178, 181, 187, 1);
+    color: black;
+  }
+  .size-container {
+    border-width: 0px, 0px, 0px, 0px;
+    background-color: rgb(238, 215, 187);
+  
+    display: flex;
+    flex-wrap: wrap;
+  
+    width: 240px;
+    height: 171px;
+  }
+  
+  .button-filter {
+    width: 200px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: rgba(68, 75, 88, 1);
+    color: beige;
+    cursor: pointer;
+  }
+  .button-clean {
+   
+    width: 200px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+  }
+  

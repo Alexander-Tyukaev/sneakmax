@@ -1,7 +1,21 @@
-import React from "react"
+import React, { useState } from 'react';
 import '../Header/header.css'
+import Korsina from "../../components/CartModal/Korsina";
+import "../../components/catalog/MyComponent.css";  
+
+
 
 const Header = () => {
+  const [isKorsinaOpen, setIsKorsinaOpen] = useState(false);
+
+  const openKorsina = () => {
+      setIsKorsinaOpen(true);
+  };
+  
+  const closeKorsina = () => {
+      setIsKorsinaOpen(false);
+  };
+
   return (
     <div className="header-container">
       <div className="header-menu">
@@ -29,7 +43,7 @@ const Header = () => {
             <div className="navigate-menu">Корзина </div>
             <img src={require('../image/Vector.png')} alt="" className="header-img1"/>
             <img src={require('../image/tovarj.png')} alt="" className="header-img2"/>
-        
+       
         </div>
         </div>
         <div className="header-line"></div>
@@ -40,8 +54,11 @@ const Header = () => {
       <div className="header-description2">Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok,<br/> Converse и многие другие по низким ценам</div>
       <div className="header-description3">SneakMax</div>
       <div className="button-div">
-      <button className="header-button">Перейти к покупкам</button>
+    
+      <button className="header-button" onClick={openKorsina} onClose={closeKorsina}>Перейти к покупкам</button>
+      <Korsina isOpen={isKorsinaOpen} onClose={closeKorsina} />
       </div>
+      
     </div>
   )
 };

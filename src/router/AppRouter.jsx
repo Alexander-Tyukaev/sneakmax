@@ -4,6 +4,7 @@ import { routes } from "./routes";
 
 const AppRouter = () => {
   return (
+    
     <Routes>
       {routes.map(({path, Component}) =>
       <Route
