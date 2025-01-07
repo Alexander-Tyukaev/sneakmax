@@ -49,16 +49,18 @@ function Korsina({ isOpen, onClose }) {
     return (
         <SimpleModal isOpen={isOpen} onClose={onClose} >
             <button className="cart-button" onClick={openCart}>Корзина ({cartItems.length}) </button>
-            {/* <div className='cart-wrapper'>
+            <div className='cart-wrapper'>
                 {sneakers.map((item) => (
-                    <div key={item.id} className="cart-sneackers">
-                        <img src={item.imgUrl} alt={item.title} className="sneaker-image"/>
+                    <div key={item.id} className="cart-sneacker">
+                        <img src={item.imgUrl} alt={item.title} className="cart-images"/>
+                        <div className="cart-cart">
                         <h3>{item.title}</h3>
                         <p>Цена: {item.price}</p>
                         <MyComponent item={item} addToCart={addToCart}/>
+                        </div>
                     </div>
                 ))}
-            </div> */}
+            </div>
             <CartModal isOpen={isCartOpen} onClose={closeCart} cartItems={cartItems} />
         </SimpleModal>
     );
