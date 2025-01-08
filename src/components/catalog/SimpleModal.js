@@ -1,5 +1,5 @@
 import React from 'react';
-import './SimpleModal.css'; // Make sure you have this CSS file
+import './SimpleModal.css'; 
 const SimpleModal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
@@ -9,7 +9,7 @@ const SimpleModal = ({ isOpen, onClose, children }) => {
         <button className="modal-close-button" onClick={onClose}>
           &times;
         </button>
-        <div className="modal-scrollable-content"> {/* Added scrollable content div */}
+        <div className="modal-scrollable-content">
             {children}
         </div>
       </div>
