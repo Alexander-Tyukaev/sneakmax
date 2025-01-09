@@ -1,9 +1,9 @@
 
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import SimpleModal from './SimpleModal';
 import './MyComponent.css';
-import CartModal from "../../components/CartModal/CartModal";
+import { CartContext } from '../../context/CartContext';
 
 const renderStars = (stars) => {
   if (!stars) return null;
@@ -12,37 +12,29 @@ const renderStars = (stars) => {
   return <span className="star-rating">{fullStars}{emptyStars}</span>;
 };
 
-const MyComponent = ({ item }) => {
+const MyComponent = ({item}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [sneaker, setSneaker] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [selectedSize, setSelectedSize] = useState(null);
-  const [cartItems, setCartItems] = useState([]);
-  const [isCartOpen, setIsCartOpen] = useState(false);
-  
+const {addToCart} = useContext(CartContext);
 
-    const closeCart = () => {
-        setIsCartOpen(false);
-    };
-    const openCart = () => {
-        setIsCartOpen(true);
-    };
 
-    const handleOpenModal = async (id) => {
-        setLoading(true);
-        try {
-            const url = `https://03d0ddaaff43dfdf.mokky.dev/sneackers/${id}`;
-            const response = await axios.get(url);
-            setSneaker(response.data);
-        } catch (e) {
-            console.error('Error fetching sneaker data:', e);
-            setError('Ошибка загрузки данных');
-        } finally {
-            setLoading(false);
-            setIsModalOpen(true);
-        }
-    };
+  const handleOpenModal = async (id) => {
+    setLoading(true);
+    try {
+        const url = `https://03d0ddaaff43dfdf.mokky.dev/sneackers/${id}`;
+        const response = await axios.get(url);
+        setSneaker(response.data);
+    } catch (e) {
+        console.error('Error fetching sneaker data:', e);
+        setError('Ошибка загрузки данных');
+    } finally {
+        setLoading(false);
+        setIsModalOpen(true);
+    }
+  };
 
     const handleCloseModal = () => {
         setIsModalOpen(false);
@@ -51,22 +43,19 @@ const MyComponent = ({ item }) => {
         setSelectedSize(null)
     };
 
+  const handleSizeChange = (size) => {
+      setSelectedSize(size)
+  }
 
-   const handleSizeChange = (size) => {
-        setSelectedSize(size)
+    const handleAddToCart = () => {
+    if (selectedSize && sneaker) {
+        addToCart({ ...sneaker, selectedSize });
+        setIsModalOpen(false);
+        setSelectedSize(null);
+    } else {
+        alert("Пожалуйста, выберите размер");
     }
-  const addToCart = (sneaker) => {
-        setCartItems((prev) => [...prev, sneaker]);
-    };
-  const handleAddToCart = () => {
-        if (selectedSize && sneaker) {
-         addToCart({...sneaker, selectedSize});
-          setIsModalOpen(false);
-           setSelectedSize(null);
-        } else {
-          alert("Пожалуйста, выберите размер");
-        }
-     }
+};
 
 
   return (
@@ -83,11 +72,13 @@ const MyComponent = ({ item }) => {
 
 
                       <div className="modal-header">
-                       <button className="cart-button" onClick={openCart}>Корзина ({cartItems.length}) </button>
+
                        </div>
                         <div className="modal-img-description">
                           <img src={sneaker.imgUrl} alt={sneaker.title} className="sneaker-image1"/>
                           <p className="modal-description1">Описание: {sneaker.description}</p>
+
+
                         </div>
                        <div className="sneaker-info">
 
@@ -136,11 +127,9 @@ const MyComponent = ({ item }) => {
                             </div>
                         </div>
                   </div>
-              ) : (
-                null
-              )}
+              ) : null}
           </SimpleModal>
-              <CartModal isOpen={isCartOpen} onClose={closeCart} cartItems={cartItems} />
+              
         </div>
   );
 };

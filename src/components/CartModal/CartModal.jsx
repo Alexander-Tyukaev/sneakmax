@@ -15,7 +15,7 @@ const CartModal = ({isOpen, onClose, cartItems}) => {
                         <li key={index} className='cart-item'>
                             <img src={item.imgUrl} className='cart-item-img' alt={item.title}/>
                           <div className='cart-item-text'>
-                            <p> {item.title} </p>
+                                 <p> {item.title} </p>
                               <p>Размер: {item.selectedSize}</p>
                             <p>Цена: {item.price} руб.</p>
                           </div>

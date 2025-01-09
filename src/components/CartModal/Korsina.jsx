@@ -33,6 +33,7 @@ function Korsina({ isOpen, onClose }) {
 
     const openCart = () => {
         setIsCartOpen(true);
+        
     };
 
     const closeCart = () => {
