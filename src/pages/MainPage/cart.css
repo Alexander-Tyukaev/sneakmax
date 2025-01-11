@@ -21,7 +21,7 @@ flex-direction: column;
   margin-top: 20px;
   width: 200px;
   height: 60px;
-  border-radius: 4px 0px 0px 0px;
+  border:none;
   background: rgba(241, 79, 79, 1);
   color: white;
   cursor: pointer;
