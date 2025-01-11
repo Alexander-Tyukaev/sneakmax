@@ -15,7 +15,6 @@
 .sneaker-info {
   text-align: left;
   width: 50%;
-  /* height: 100%; */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -176,7 +175,7 @@ cursor: pointer;
  
       .cart-wrapper{
         display: flex;
-        /* flex-wrap: wrap; */
+    
         margin-top: 20px;
         flex-direction: column;
       }
