@@ -1,0 +1,131 @@
+.cart-modal-container2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+.cart-modal-block2 {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 580px;
+  height: 802px;
+}
+.modal-ul2 {
+  overflow-y: auto;
+  height: 55%;
+  border: 1px solid rgba(217, 217, 217, 1);
+}
+.cart-form {
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 10px;
+ 
+}
+
+.cart-remove-button1 {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: rgba(178, 181, 187, 1);
+}
+.cart-input {
+  width: 500px;
+  height: 60px;
+  border: none;
+  background: rgba(246, 246, 246, 1);
+  color: rgba(178, 181, 187, 1);
+  font-family: 'Intro';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.checkout-button {
+  width: 221px;
+  height: 60px;
+  background: rgba(241, 79, 79, 1);
+  color: rgba(255, 255, 255, 1);
+
+  font-family: 'Intro';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  text-decoration-skip-ink: none;
+  border: none;
+}
+.modal-close-button1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.modal-p {
+  font-family: 'Intro';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(178, 181, 187, 1);
+}
+.modal-p2 {
+  font-family: 'IntroBold';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+}
+.modal-p-container {
+  display: flex;
+  
+  justify-content: space-between;
+}
+.modal-info1-container{
+    width: 240px;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.modal-p3{
+font-family: 'Intro';
+font-size: 16px;
+font-weight: 600;
+line-height: 16px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: rgba(68, 75, 88, 1);
+
+}
+.cart-item-png1 {
+    height: 100px;
+    width: 150px;
+    margin-right: 10px;
+  }
