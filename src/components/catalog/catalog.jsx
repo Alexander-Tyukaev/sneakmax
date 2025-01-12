@@ -3,14 +3,13 @@ import React, { useEffect, useState } from "react"
 import Nouislider from "nouislider-react";
 import "./slider.css";
 import "./catalog.css"
+import "./catalog1024.css"
 import "./cart.css"
-import { useNavigate } from "react-router-dom";
-import { DETAIL_PAGE_ROUTE } from "../../router/consts";
 import MyComponent from './MyComponent'
 
 const Catalog = () => {
   
-    const navigate = useNavigate()
+  
     
     const [sneackers,setSneackers] = useState(null)
     
@@ -147,7 +146,7 @@ useEffect(()=>{
         start={sliderValues}
         connect 
         onUpdate={(slider) =>{
-          setSliderValues([Number(slider[0]), Number(slider[1])]);
+          
           setMin(Number(slider[0]))
           setMax(Number(slider[1]))
 

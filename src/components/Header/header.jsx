@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import '../Header/header.css';
+import '../Header/header1024.css';
 import CartModal from "../../components/CartModal/CartModal";
 import "../../components/catalog/MyComponent.css";
 import axios from 'axios';
@@ -59,8 +60,9 @@ const Header = () => {
                         <div className="navigate-menu">
                             <a href="#about" className="navigate-about"> О нас</a>
                         </div>
-                        <div className="navigate-menu"></div>
+                        <div className="navigate-menu">
                         <a href="#slider" className="navigate-about">Подбор товара</a>
+                        </div>
                         <div className="navigate-menu">
                             <a href="#team" className="navigate-about">Наша команда</a>
                         </div>
