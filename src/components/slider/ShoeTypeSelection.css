@@ -1,74 +1,98 @@
-.slider-container{
+.slider-container {
+  width: 100%;
+  height: 385px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.quiz-nomeracia {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.quiz-polosa2 {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(120, 128, 142);
+  margin-bottom: 70px;
+}
+.slaider-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.img-label {
+  width: 310px;
+  height: 140px;
+  background: rgba(255, 244, 238, 1);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+.slider-checkbox {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  background-color: white;
+  margin-right: 15px;
+
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+.slider-checkbox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 15%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 12px;
+  height: 12px;
+  border: 1px solid transparent;
+  border-top: 3px solid gray;
+  border-right: 3px solid gray;
+  transform: rotate(130deg);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.slider-checkbox.checked::before {
+  opacity: 1;
+}
+@media (max-width: 1024px) {
+  .slider-container {
     width: 100%;
-    height: 475px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-   
+    height: 385px;
   }
-  .quiz-nomeracia{
-    position: absolute;
-    bottom:0;
-    left: 0;
-   
-  }
-  .quiz-polosa2{
-    width: 100%;
-    height: 2px;
-    background-color: rgb(120, 128, 142);
-   margin-bottom: 40px;
-  }
-  .slaider-img{
+}
+@media (max-width: 1024px) {
+  .slaider-img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    object-fit: contain;
-    
-    
   }
-  .img-label{
-    width: 310px;
-    height: 140px;
-    background: rgba(255, 244, 238, 1);
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse;
-    cursor: pointer;
-    
-  }
-  .slider-checkbox {
-    display: flex;
-    flex-direction: column;
-    width: 24px; 
-    height: 24px;
-    border: 2px solid #ccc; 
-    border-radius: 3px;
-    background-color: white;
-    margin-right: 15px;
-    
-    cursor: pointer;
-    position: relative;
-    transition: background-color 0.2s ease; 
-  }
-  
-  .slider-checkbox::before { 
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 15%;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    width: 12px;
-    height: 12px;
-    border: 1px solid transparent;
-    border-top: 3px solid gray;
-    border-right: 3px solid gray;
-    transform: rotate(130deg);
-    opacity: 0;  
-    transition: opacity 0.2s ease; 
-  
 }
-  
-  .slider-checkbox.checked::before {
-    opacity: 1;
+@media (max-width: 1024px) {
+  .img-label {
+  height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
   }
+}
+@media (max-width: 1024px) {
+  
+    .quiz-polosa2 {
+     
+      margin-top: 20px;
+    }
+  }
+
+

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./contacts.css";
+import "./contacts768.css";
 
 const Contacts = () => {
   const images = [
@@ -46,10 +47,8 @@ const Contacts = () => {
       </div>
       <div className="contacts-block2">
         <iframe
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade76f8f407611b8910389e757fece993a048b7424958ac702d67cf33b43b457c&amp;source=constructor"
-          width="680"
-          height="500"
-          frameBorder="0"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade76f8f407611b8910389e757fece993a048b7424958ac702d67cf33b43b457c&amp;source=constructor" className="iframe"
+          
         ></iframe>
       </div>
     </div>

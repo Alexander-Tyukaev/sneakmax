@@ -78,6 +78,7 @@ margin-top: 10px;
   height: 60px;
   top: 5850.23px;
   left: 390px;
+  cursor: pointer;
   padding: 22px 47px 22px 47px;
   gap: 10px;
   border-radius: 4px 0px 0px 0px;
@@ -104,4 +105,64 @@ margin-top: 10px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+@media (max-width: 1024px) {
+  .insta-container {
+    width: 850px;
+    height: 533px;
+    padding-top: 10px;
+  padding-right: 10px;
+  gap: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .insta-form-block {
+    width: 270px;
+    height: 200px;
+  }
+}
+@media (max-width: 1024px) {
+  .form-input {
+    margin: auto;
+    width: 240px;
+    height: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .form-button {
+    margin: auto;
+    width: 240px;
+    height: 50px;
+    text-align: center;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1024px) {
+  .insta-block {
+    width: 500px;
+    height: 413px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1024px) {
+  .insta-image-38 {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .insta-image-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1024px) {
+  .insta-image-block1 {
+   width: 130px;
+  }
 }

@@ -1,0 +1,17 @@
+@media (max-width: 1024px) {
+    .slider{
+        width: 720px;
+        height: 658px;
+      
+        margin-top: 40px;
+        background: rgba(255, 244, 238, 1);
+      
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }}
+    @media (max-width: 1024px) {
+        .slick-slider .slick-initialized{
+     
+        }}

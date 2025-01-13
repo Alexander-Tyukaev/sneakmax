@@ -3,6 +3,7 @@ import SliderComponent from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./slider.css";
+import "./slider1024.css";
 import ShoeTypeSelection from "./ShoeTypeSelection";
 import ShoeSizeSelection from "./ShoeSizeSelection";
 import FeedbackForm from "./FeedbackForm";

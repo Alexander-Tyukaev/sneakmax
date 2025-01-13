@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+    .about-figure {
+      width: 320px;
+      height: 350px;
+    }
+  }
+  @media (max-width: 768px) {
+    .about-figure-img {
+      width: 320px;
+      height: 350px;
+    }
+  }
+  @media (max-width: 768px) {
+    .about-container {
+      width: 100%;
+      height: 380px;
+      margin-top: 15px;
+    }
+  }
+  @media (max-width: 768px) {
+    .about-text {
+      width: 320px;
+      height: 190px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .about-image {
+      width: 380px;
+      height: 380px;
+    }
+  }
+  @media (max-width: 1024px) {
+  .about-image-png{
+      width: 380px;
+      height: 380px;
+  }}
+  @media (max-width: 1024px) {
+    .about-title{
+        width: 320px;
+        height: 26px;
+        
+        font-size: 20px;
+    }}
+    @media (max-width: 1024px) {
+        .about-block{
+            width: 380px;
+            height: 110px;
+            font-family: 'Introt';
+            font-size: 12px;
+        }}

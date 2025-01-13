@@ -13,7 +13,6 @@
   .header-menu {
     width: 720px;
     height: 44px;
-    
   }
 }
 @media (max-width: 1024px) {
@@ -26,70 +25,63 @@
   }
 }
 @media (max-width: 1024px) {
-    .header-navigate-menu
-    {
-        width: 60%;
-        font-size: 12px;
-        margin-top: 10px;
-
-    }
+  .header-navigate-menu {
+    width: 60%;
+    font-size: 12px;
+    margin-top: 10px;
   }
-  @media (max-width: 1024px) {
-    .navigate-menu
-    {
-       
-        font-size: 10px;
-        font-weight: 400;
-        line-height: 8px;
-        display: flex;
-        text-align: center;
-
-    
-    }
+}
+@media (max-width: 1024px) {
+  .navigate-menu {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 8px;
+    display: flex;
+    text-align: center;
   }
-  @media (max-width: 1024px) {
-   .header-description
-    {
-        width: 720px;
-        height: 75px;
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 40px;
-        padding-top: 50px;
-    }
+}
+@media (max-width: 1024px) {
+  .header-description {
+    width: 720px;
+    height: 75px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-top: 50px;
   }
-  @media (max-width: 1024px) {
-    .header-description2
-     {
-        width: 720px;
-        height: 44px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 22.4px;
-        padding-top: 120px;
-     }
-   }
-   @media (max-width: 1024px) {
-    .header-description3
-     {
-        width: 720px;
-        height: 200px;
-        font-family: 'introt';
-        font-size: 150px;
-        font-weight: 600;
-        line-height: 160px;
-        margin-top: -55px;
-       
-     }
-   }
-   @media (max-width: 1024px) {
-    .button-div
-     {
-        width: 720px;
-        height: 60px;
-        margin-top: -40px;
-       
-     }
-   }
-
-
+}
+@media (max-width: 1024px) {
+  .header-description2 {
+    width: 720px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    padding-top: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .header-description3 {
+    width: 720px;
+    height: 200px;
+    font-family: 'introt';
+    font-size: 150px;
+    font-weight: 600;
+    line-height: 160px;
+    margin-top: -55px;
+  }
+}
+@media (max-width: 1024px) {
+  .button-div {
+    width: 720px;
+    height: 60px;
+    margin-top: -40px;
+  }
+}
+@media (max-width: 1024px) {
+  .cart-count-badge {
+    margin-left: 59px;
+    min-width: 15px;
+    height: 15px;
+  }
+}

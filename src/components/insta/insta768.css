@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .insta-container {
+        width: 720px;
+        height: 800px;
+        padding-top: 0;
+      padding-right: 0x;
+      gap: 10px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  }

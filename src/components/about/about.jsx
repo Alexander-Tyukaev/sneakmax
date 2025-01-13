@@ -1,11 +1,13 @@
 import React from "react"
 import "./about.css"
+import "./about1024.css"
+import "./about768.css"
 
 const About = () => {
   return (
     <div className="about-container" id="about">
       <div className="about-figure">
-      <img src={require('../image/figure.png')} alt="" />
+      <img src={require('../image/figure.png')} alt=""  className="about-figure-img"/>
       </div>
       <div className="about-text">
         <div className="about-title">
@@ -17,7 +19,7 @@ const About = () => {
             </div>
       </div>
       <div className="about-image">
-      <img src={require('../image/Mask Group.png')} alt="" />
+      <img src={require('../image/Mask Group.png')} alt="" className="about-image-png"/>
       </div>
     </div>
   )

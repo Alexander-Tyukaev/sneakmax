@@ -1,5 +1,36 @@
 @media (max-width: 1024px) {
     .catalog{
-        
+      width: 720px;
     }
   }
+  @media (max-width: 1024px) {
+    .catalog-block1{
+      width: 98px;
+    height: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 15px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .catalog-block2{
+      margin-top: 50px;
+      width: 720px;
+  }}
+  @media (max-width: 1024px) {
+    .catalog-cart{
+      width: 605px;
+      flex-wrap: wrap;
+      display: flex;
+  }}
+  @media (max-width: 1024px) {
+    .cart-sneackers{
+      width: 230px;
+      height: 300px;
+  }}
+  @media (max-width: 1024px) {
+    .sneaker-image{
+      width: 220px;
+      height: 220px;
+  }}

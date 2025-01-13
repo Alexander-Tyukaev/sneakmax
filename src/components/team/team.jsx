@@ -21,7 +21,7 @@ const Team = () => {
 <div className="team-container" id="team">
     <div className="team-title">Наша команда</div>
     <div className="team-figure">
-      <img src={require('../image/Group 72.png')} alt="" />
+      <img src={require('../image/Group 72.png')} alt="" className="team-figure-png"/>
       </div>
     <div className="team-block">
             {comanda && comanda.map((item) => ( 

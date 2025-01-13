@@ -71,4 +71,28 @@ margin-top: 20px;
   .custom-radio.checked::before {
     opacity: 1;
   }
+  @media (max-width: 1024px) {
+    .label-size{
+      width: 110px;
+      height: 24px;
+    }}
+    @media (max-width: 1024px) {
+    
+    .custom-radio{
+        width: 20px;
+        height: 20px;
+        border: 2px solid #ccc;
+        background-color: white;
+        margin-right: 0px;
+      }}
+      @media (max-width: 1024px) {
+        .size2-container{
+          display: flex;
+          justify-content: space-between;
+          gap: 0;
+        }}
+        @media (max-width: 1024px) {
+          .quiz-polosa3{
+            margin-top: 58px;
+          }}
   

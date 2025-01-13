@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./insta.css"
+import "./insta768.css"
 
 const Insta = () => {
 
@@ -49,7 +50,7 @@ const Insta = () => {
         <img src={require('../image/Rectangle 37.jpg')} alt="" />
         <img src={require('../image/Rectangle 39.jpg')} alt="" />
         </div>
-        <img src={require('../image/Rectangle 38.jpg')} alt="" />
+        <img src={require('../image/Rectangle 38.jpg')} alt="" className="insta-image-38"/>
         <div className="insta-image-block1">
         <img src={require('../image/Rectangle 40.jpg')} alt="" />
         <img src={require('../image/Rectangle 41.jpg')} alt="" />

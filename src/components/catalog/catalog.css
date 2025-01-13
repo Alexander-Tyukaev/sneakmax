@@ -1,3 +1,20 @@
+.catalog-cart {
+  display: flex;
+  flex-wrap: wrap;
+  width: 880px;
+  height: auto;
+  justify-content: space-around;
+}
+.cart-sneackers{
+  width: 280px;
+height: 390px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+
+
+}
 .catalog {
     position: relative;
     width: 1180px;

@@ -1,8 +1,20 @@
-.faq-container{
-    width: 1180px;
-    margin: auto;
+.faq-container {
+  width: 1180px;
+  margin: auto;
 }
-.faq-accordion-container{
+.faq-accordion-container {
+  margin-left: 0;
+  width: 1030px;
+}
+@media (max-width: 1024px) {
+  .faq-container {
+    width: 729px;
+    margin: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .faq-accordion-container {
     margin-left: 0;
-    width: 1030px;
+    width: 720px;
+  }
 }

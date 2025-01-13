@@ -105,3 +105,10 @@
   text-decoration-skip-ink: none;
   
   }
+  @media (max-width: 1024px) {
+    .cart-modal-container {
+      padding-left: 35%;
+      padding-top: 10%;
+      
+    }
+  }

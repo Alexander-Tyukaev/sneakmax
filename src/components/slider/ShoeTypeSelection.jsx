@@ -29,9 +29,10 @@ const ShoeTypeSelection = ({ shoeType, onChange }) => {
             {type}
           </label>
         ))}
+        </div>
         <div className="quiz-polosa2"></div>
         <div className="quiz-nomeracia">1 из 3</div>
-      </div>
+      
     </div>
   );
 };

@@ -3,6 +3,7 @@ import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import SimpleModal from './SimpleModal';
 import './MyComponent.css';
+import './SimpleModal768.css'
 import { CartContext } from '../../context/CartContext';
 
 const renderStars = (stars) => {
@@ -84,11 +85,11 @@ const {addToCart} = useContext(CartContext);
 
 
                          <div className="sneaker-atrb-instock">
-                             <p className="sneaker-atrb">Артикул: {sneaker.vendorCode}</p>
-                             {<p className="sneaker-atrb">В наличии: {sneaker.inStock ? "Да" : "Нет"}</p>}
+                             <p className="sneaker-atrb">Артикул: {sneaker.vendorСode}</p>
+                             {<p className="sneaker-atrb">В наличии: {sneaker.inStock }</p>}
                          </div>
 
-                        <h2>{sneaker.title}</h2>
+                        <h2 className="sneaker-h2">{sneaker.title}</h2>
                          {sneaker.stars && <p> {renderStars(sneaker.stars)}</p>}
 
                          <div className='checkbox-wrapper'>
