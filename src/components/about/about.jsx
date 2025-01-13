@@ -2,6 +2,7 @@ import React from "react"
 import "./about.css"
 import "./about1024.css"
 import "./about768.css"
+import "./about480.css"
 
 const About = () => {
   return (

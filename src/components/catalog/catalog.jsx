@@ -4,6 +4,7 @@ import Nouislider from "nouislider-react";
 import "./slider.css";
 import "./catalog.css"
 import "./catalog1024.css"
+import "./catalog480.css"
 import "./cart.css"
 import MyComponent from './MyComponent'
 
