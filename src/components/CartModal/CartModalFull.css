@@ -181,3 +181,27 @@ color: rgba(68, 75, 88, 1);
     padding-top: 130px;
     }
   }
+  @media (max-width: 375px) {
+    .cart-modal-block2 {
+    width: 320px;
+    height: 650px;
+    }
+  }
+  @media (max-width: 375px) {
+    .cart-modal-container2 {
+        width: 375px;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 130px;
+    }
+}
+@media (max-width: 375px) {
+  .cart-input {
+  width: 240px;
+  }
+}
+@media (max-width: 375px) {
+  .cart-form {
+  width: 240px;
+  }
+}

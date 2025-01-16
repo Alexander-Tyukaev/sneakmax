@@ -1,7 +1,7 @@
 import React from 'react';
 import './ShoeTypeSelection.css';
 import './ShoeTypeSelection480.css'; 
-
+import './ShoeTypeSelection375.css'; 
 
 const ShoeTypeSelection = ({ shoeType, onChange }) => {
   const shoeTypeImages = {

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import '../Header/header.css';
 import '../Header/header1024.css';
 import '../Header/header480.css';
+import '../Header/header375.css';
 import CartModal from "../../components/CartModal/CartModal";
 import "../../components/catalog/MyComponent.css";
 import axios from 'axios';

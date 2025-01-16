@@ -30,3 +30,15 @@
     width: 420px;
   }
 }
+@media (max-width: 375px) {
+  .faq-container {
+    width: 320px;
+    margin: auto;
+  }
+}
+@media (max-width: 375px) {
+  .faq-accordion-container {
+    margin-left: 0;
+    width: 320px;
+  }
+}

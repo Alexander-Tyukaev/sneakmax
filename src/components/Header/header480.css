@@ -104,4 +104,15 @@
         height: 60px;
     }
 }
+@media (max-width: 375px) {
+  .button-div {
+    width: 375px;
+     padding-left: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .header-button {
+     border: none;
+  }
+}
 

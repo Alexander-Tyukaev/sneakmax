@@ -1,0 +1,38 @@
+@media (max-width: 375px) {
+    .about-container {
+        width: 375px;
+        height: 570px;
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+  @media (max-width: 375px) {
+    .about-text {
+        width: 365px;
+        height: 190px;
+        margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 375px) {
+    .about-block {
+        width: 365px;
+        height: 110px;
+        font-family: 'Introt';
+        font-size: 12px;
+    }
+  }
+  @media (max-width: 375px) {
+    .about-image {
+        width: 375px;
+        height: 360px;
+    }
+  }
+  @media (max-width: 375px) {
+    .about-image-png {
+        width: 375px;
+        height: 360px;
+    }
+  }

@@ -138,3 +138,22 @@
       
   }
 }
+@media (max-width: 375px) {
+  .cart-modal-block {
+    width: 330px;
+    height: 480px;
+    
+  }
+}
+@media (max-width:375px) {
+  .cart-modal-container {
+    width: 375px;
+      padding-left: 6%;
+      padding-top: 30%;
+  }
+}
+@media (max-width: 375px) {
+  .cart-info-block {
+      width: 300px;
+  }
+}

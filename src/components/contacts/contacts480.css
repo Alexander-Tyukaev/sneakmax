@@ -1,4 +1,9 @@
 @media (max-width: 480px) {
+    .contacts-container {
+        width: 480px;
+    }
+}
+@media (max-width: 480px) {
     .contacts-block {
         width: 480px;
         height: 1020px;

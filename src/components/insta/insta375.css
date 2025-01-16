@@ -1,0 +1,41 @@
+@media (max-width: 375px) {
+    .insta-container {
+        width: 375px;
+        height: auto;
+        gap: 1px;
+        padding-right: 0;
+    }
+}
+@media (max-width: 375px) {
+    .insta-block {
+        width: 375px;
+        height: 600px;
+    }
+}
+@media (max-width: 375px) {
+    .insta-image-block {
+        width: 100%;
+        display: flex;
+        align-items: center; 
+        gap: 10px;
+        height: 600px;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (max-width: 375px) {
+    .insta-image-block1 {
+      width: 300px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+    }
+}
+@media (max-width: 375px) {
+    .insta-form  {
+      width: 320px;
+   
+    }
+}

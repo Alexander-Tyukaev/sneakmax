@@ -5,6 +5,7 @@ import "./slider.css";
 import "./catalog.css"
 import "./catalog1024.css"
 import "./catalog480.css"
+import "./catalog375.css"
 import "./cart.css"
 import MyComponent from './MyComponent'
 

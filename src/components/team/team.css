@@ -155,3 +155,34 @@
     height:210px;
 }
 }
+@media (max-width:375px) {
+  .team-title {
+   width: 300px;
+   font-size: 24px;
+   z-index: 90;
+}
+}
+@media (max-width:375px) {
+  .team-block {
+ width: 360px;
+}
+}
+@media (max-width:375px) {
+  .team-member {
+ width: 350px;
+ height:300px ;
+}
+}
+@media (max-width:375px) {
+  .team-image {
+ width: 350px;
+ height: 250px;
+ object-fit: contain;
+}
+}
+@media (max-width:375px) {
+  .team-container {
+ width: 375px;
+
+}
+}

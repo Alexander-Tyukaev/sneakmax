@@ -33,3 +33,20 @@ height: 60px;
     margin-top: 80px;
   }
 }
+@media (max-width: 375px) {
+  .feedbackForm-textarea {
+    width: 320px;
+    height: 286px;
+    margin-left: 26px;
+  }
+}
+@media (max-width: 375px) {
+  .quiz-polosa4 {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 375px) {
+  .feedbackForm-stranicza {
+    margin-top: 50px;
+  }
+}

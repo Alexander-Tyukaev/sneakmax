@@ -3,6 +3,7 @@ import "./about.css"
 import "./about1024.css"
 import "./about768.css"
 import "./about480.css"
+import "./about.375.css"
 
 const About = () => {
   return (

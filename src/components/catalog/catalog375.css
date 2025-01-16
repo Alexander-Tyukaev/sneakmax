@@ -1,0 +1,66 @@
+@media (max-width: 375px) {
+  .catalog {
+    width: 375px;
+    
+  }
+}
+@media (max-width: 375px) {
+  .catalog-block2 {
+    width: 375px;
+  }
+}
+@media (max-width: 375px) {
+  .catalog-filter {
+    width: 375px;
+    height: 440px;
+  }
+}
+@media (max-width: 375px) {
+  .filter-text {
+    width: 375px;
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  .catalog-price {
+    width: 350px;
+  }
+}
+@media (max-width: 375px) {
+  .catalog-gender {
+    margin: auto;
+  }
+}
+@media (max-width: 375px) {
+  .catalog-size {
+    width: 350px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 375px) {
+    .size-container {
+      width: 220px;
+      display: flex;
+      height: 90px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+  @media (max-width: 375px) {
+    .cart-sneackers {
+        width: 350px;
+        height: 160px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-between;
+        align-items: flex-end;
+    }
+  }
+  @media (max-width: 375px) {
+    .sneaker-image {
+        width: 150px;
+        height: 150px;
+    }
+  }

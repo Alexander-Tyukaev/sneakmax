@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./contacts.css";
 import "./contacts768.css";
 import "./contacts480.css";
+import "./contacts375.css";
 
 const Contacts = () => {
   const images = [

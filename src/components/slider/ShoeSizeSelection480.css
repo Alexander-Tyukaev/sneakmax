@@ -16,7 +16,47 @@
   }
 }
 @media (max-width: 480px) {
-    .img-size {
-      object-fit: cover;
-    }
+  .img-size {
+    object-fit: cover;
   }
+}
+@media (max-width: 375px) {
+  .size2-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 375px) {
+  .img-size img{
+    width: 95%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 375px) {
+  .img-size {
+    height: 270px;
+  }
+}
+@media (max-width: 375px) {
+  .quiz-polosa3 {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 375px) {
+  .slider-back {
+      width: 120px;
+      height: 50px;
+      left: 70px;
+  }
+}
+@media (max-width: 375px) {
+  .last-slide {
+    left: 230px;
+  }
+}
