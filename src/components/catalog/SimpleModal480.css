@@ -1,0 +1,28 @@
+
+@media (max-width: 480px) {
+    .modal-overlay {
+    width: 480px;
+    }
+}
+@media (max-width: 480px) {
+    .modal-img-description {
+    margin-left: 10px;
+    height: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .sneaker-atrb-instock {
+    width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sneaker-characteristics {
+ width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .sneaker-info {
+justify-content: space-around;
+    }
+}

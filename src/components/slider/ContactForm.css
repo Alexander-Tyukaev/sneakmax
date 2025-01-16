@@ -46,15 +46,38 @@
   color: rgba(255, 255, 255, 1);
   margin-bottom: 10px;
 }
-.ContactForm-button{
+.ContactForm-button {
   width: 220px;
-height: 60px;
-background: rgba(241, 79, 79, 1);
-color: rgba(255, 255, 255, 1);
-margin-top: 10px;
-
+  height: 60px;
+  background: rgba(241, 79, 79, 1);
+  color: rgba(255, 255, 255, 1);
+  margin-top: 10px;
 }
 @media (max-width: 1024px) {
-  .ContactForm-title{
+  .ContactForm-title {
     margin-top: 0;
-  }}
+  }
+}
+@media (max-width: 480px) {
+  .ContactForm-block {
+    width: 440px;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .ContactForm-polosa {
+   margin-top: -10px;
+  }
+}
+@media (max-width: 480px) {
+    .last-slide {
+  right:  20px;
+  }
+}
+@media (max-width: 480px) {
+  .ContactForm-title3 {
+width: 360px;
+height: 50px;
+}
+}

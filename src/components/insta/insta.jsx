@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./insta.css"
 import "./insta768.css"
+import "./insta480.css"
 
 const Insta = () => {
 

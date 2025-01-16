@@ -1,0 +1,14 @@
+@media (max-width: 480px) {
+    .insta-container {
+        width: 480px;
+        height: 800px;
+        gap: 1px;
+        padding-right: 0;
+    }
+}
+@media (max-width: 480px) {
+    .insta-block {
+       width: 470px;
+
+    }
+}

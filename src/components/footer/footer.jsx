@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-logo">SneakMax</div>
         <div className="footer-navigate-menu">
             <div className="navigate-menu-footer">
-            <a href="#catalog" className="navigate-about"> Каталог</a>
+            <a href="#catalog" className="navigate-about-footer"> Каталог</a>
               </div>
             <div className="navigate-menu-footer">
             <a href="#about" className="navigate-about-footer"> О нас</a>

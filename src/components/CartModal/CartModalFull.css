@@ -157,3 +157,27 @@ color: rgba(68, 75, 88, 1);
       margin: auto;
     }
   }
+  @media (max-width: 480px) {
+    .cart-modal-block2 {
+    width: 380px;
+    height: 650px;
+    }
+  }
+  @media (max-width: 480px) {
+    .cart-input {
+    width: 290px;
+    }
+  }
+  @media (max-width: 480px) {
+    .cart-form {
+    width: 360px;
+    }
+  }
+  @media (max-width: 480px) {
+    .cart-modal-container2 {
+      width: 480px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 130px;
+    }
+  }

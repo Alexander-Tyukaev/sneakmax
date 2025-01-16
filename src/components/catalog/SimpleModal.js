@@ -1,5 +1,6 @@
 import React from 'react';
 import './SimpleModal.css'; 
+import './SimpleModal480.css'; 
 const SimpleModal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 

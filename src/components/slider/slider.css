@@ -54,14 +54,7 @@
   margin: 20px 0;
 }
 
-.slider label {
-  display: flex;
-  margin-bottom: 5px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: left;
-}
+
 
 .slider input[type='radio'] {
   margin-right: 10px;

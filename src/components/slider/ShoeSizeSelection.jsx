@@ -1,6 +1,6 @@
 import React from 'react';
 import './ShoeSizeSelection.css';
-
+import './ShoeSizeSelection480.css';
 const ShoeSizeSelection = ({ shoeSize, onChange }) => {
   const sizeOptions = [
     { value: '<35', label: 'Ниже 35' },

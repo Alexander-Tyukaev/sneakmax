@@ -1,0 +1,22 @@
+@media (max-width: 480px) {
+  .label-size {
+    width: 93px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .slider-back {
+    width: 150px;
+    height: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .size-stranicza {
+    margin-top: 53px;
+  }
+}
+@media (max-width: 480px) {
+    .img-size {
+      object-fit: cover;
+    }
+  }

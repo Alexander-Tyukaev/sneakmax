@@ -1,5 +1,6 @@
 import React from 'react';
-import './ShoeTypeSelection.css'; 
+import './ShoeTypeSelection.css';
+import './ShoeTypeSelection480.css'; 
 
 
 const ShoeTypeSelection = ({ shoeType, onChange }) => {

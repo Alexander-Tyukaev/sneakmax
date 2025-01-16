@@ -18,3 +18,15 @@
     width: 720px;
   }
 }
+@media (max-width: 480px) {
+  .faq-container {
+    width: 420px;
+    margin: auto;
+  }
+}
+@media (max-width: 480px) {
+  .faq-accordion-container {
+    margin-left: 0;
+    width: 420px;
+  }
+}

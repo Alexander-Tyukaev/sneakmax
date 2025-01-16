@@ -112,3 +112,29 @@
       
     }
   }
+  @media (max-width: 480px) {
+    .cart-modal-block {
+      width: 380px;
+      height: 480px;
+      
+    }
+  }
+  @media (max-width: 480px) {
+    .cart-modal-container {
+      width: 480px;
+        padding-left: 8%;
+        padding-top: 30%;
+    }
+}
+@media (max-width: 480px) {
+  .cart-modal-button {
+    width: 139px;
+      
+  }
+}
+@media (max-width: 480px) {
+  .cart-info-block {
+   width: 360px;
+      
+  }
+}
